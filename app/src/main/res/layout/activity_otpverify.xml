@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
+    tools:context=".OTPverify">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:layout_margin="50dp"
+            android:background="@drawable/custom_et"
+            android:padding="16dp"
+            android:hint="Enter six digit otp"
+            android:inputType="phone"
+            android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:onClick="otpConfirmButton"
+        android:text="enter"
+        android:background="@drawable/custom_btn"
+        android:textSize="18sp"
+        android:textColor="@color/purple_700"/>
+</LinearLayout>

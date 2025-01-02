@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".PhoneNumberVerify">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumberVerifyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginHorizontal="50dp"
+            android:hint="Enter Your Number"
+            android:background="@drawable/custom_et"
+            android:padding="16dp"
+            android:drawableTint="@color/purple_500"
+            android:drawablePadding="4dp"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:maxLength="11"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneNumberVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Note:\nEnter a number for signing up.\nThis number will help you to login.\nIf you want to be a donor, this phone number will be used for reaching to you."
+        android:textColor="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/phoneNumberVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_btn"
+        android:text="Proceed"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+</LinearLayout>

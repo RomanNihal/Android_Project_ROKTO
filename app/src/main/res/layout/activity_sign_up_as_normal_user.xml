@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".SignUpAsNormalUser">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/blood_donation_logo"
+                android:layout_marginBottom="24dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/ubuntu_bold"
+                android:background="@drawable/custom_et"
+                android:hint="Enter Your Name"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple_500"
+                android:background="@drawable/custom_et"
+                android:fontFamily="@font/ubuntu_bold"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/purple_500"
+                android:background="@drawable/custom_et"
+                android:fontFamily="@font/ubuntu_bold"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/signUpCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#393E46"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Do you want to be a donor ?"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/signUpCreateButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="create account"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_btn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

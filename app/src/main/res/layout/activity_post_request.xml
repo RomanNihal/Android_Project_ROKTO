@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".PostRequest">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Contact Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/postRequestContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:fontFamily="@font/ubuntu_bold"
+        android:hint="Enter contact number"
+        android:inputType="phone"
+        android:background="@drawable/custom_et"
+        android:padding="16dp"
+        android:drawableTint="@color/purple_500"
+        android:layout_marginHorizontal="50dp"
+        android:drawablePadding="4dp"
+        android:textSize="18sp"
+        android:maxLength="11"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/postRequestAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:fontFamily="@font/ubuntu_bold"
+            android:inputType="text"
+            android:background="@drawable/custom_et"
+            android:padding="16dp"
+            android:drawableTint="@color/purple_500"
+            android:drawablePadding="4dp"
+            android:hint="Enter Clinic or Hospital Name"
+            android:layout_marginHorizontal="50dp"
+            android:textSize="18sp" />
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/postRequestPostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:layout_marginHorizontal="50dp"
+        android:text="Post"
+        android:onClick="PostRequest"
+        />
+
+</LinearLayout>
